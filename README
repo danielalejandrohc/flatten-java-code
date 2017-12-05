@@ -1,7 +1,8 @@
 An example of the Main Class to use the Flatten class:
 
 public static void main(String[] args) {
-        // A representation of the array it is: [1, 2, 3, [41, 42, 43, 44, 45], [], [1, 2, [1, 2, 3, 4, 5, [1, 2]]], 7, 8, 9, 10]
+        // A representation of the array it is: 
+        // [1, 2, 3, [41, 42, 43, 44, 45], [], [1, 2, [1, 2, 3, 4, 5, [1, 2]]], 7, 8, 9, 10]
         List<Object> array = Arrays.asList(
                 1,
                 2,
@@ -24,3 +25,8 @@ public static void main(String[] args) {
         
         System.out.println("Flatten array: " + ret);
 }
+
+This code it will print:
+
+Original array: [1, 2, 3, [41, 42, 43, 44, 45], [], [1, 2, [1, 2, 3, 4, 5, [1, 2]]], 7, 8, 9, 10]
+Flatten array: [1, 2, 3, 41, 42, 43, 44, 45, 1, 2, 1, 2, 3, 4, 5, 1, 2, 7, 8, 9, 10]
